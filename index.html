@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-row">
+            <h1>🎯 Number Guessing Game</h1>
+            <button id="soundToggle" class="icon-btn" onclick="toggleSound()" title="Toggle Sound">🔊</button>
+        </div>
+        <p class="subtitle" id="rangeText">Guess a number between 1 and 50</p>
+
+        <!-- Difficulty Selection -->
+        <div class="difficulty">
+            <button class="diff-btn active" onclick="selectDifficulty('easy', this)">Easy (1-50)</button>
+            <button class="diff-btn" onclick="selectDifficulty('medium', this)">Medium (1-100)</button>
+            <button class="diff-btn" onclick="selectDifficulty('hard', this)">Hard (1-200)</button>
+        </div>
+
+        <!-- Game Box -->
+        <div class="game-box">
+            <input
+                type="number"
+                id="guessInput"
+                placeholder="Enter your guess"
+                min="1"
+                max="50"
+            >
+
+            <button id="submitBtn" class="main-btn" onclick="handleGuess()">
+                Submit Guess
+            </button>
+
+            <p class="message" id="message">Make your first guess!</p>
+
+            <button id="hintBtn" class="hint-btn" onclick="getHint()" title="Get a hint (Once per round)">
+                💡 Need a Hint?
+            </button>
+
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-label">Attempts Left</span>
+                    <span class="stat-value" id="attempts">10</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Best Score</span>
+                    <span class="stat-value" id="bestScore">0</span>
+                </div>
+            </div>
+
+            <!-- Restart button shown only when round ends -->
+            <button id="restartBtn" class="restart-btn hidden" onclick="initGame()">
+                🔄 Play Again
+            </button>
+        </div>
+
+        <div class="footer">
+            Built with HTML, CSS & JavaScript
+        </div>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
