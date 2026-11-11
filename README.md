@@ -27,3 +27,4 @@ A modern, responsive Number Guessing Game built with vanilla HTML5, CSS3, and Ja
 2. Enter your guess in the input box and hit **Submit Guess** or press **Enter**.
 3. Follow the hints (`Too High` / `Too Low`).
 4. Guess the secret number before your attempts run out!
+
