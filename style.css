@@ -39,7 +39,6 @@ h1 {
     font-size: 14px;
 }
 
-/* Difficulty Buttons */
 .difficulty {
     display: flex;
     gap: 8px;
@@ -72,7 +71,6 @@ h1 {
     box-shadow: 0 0 12px rgba(99, 102, 241, 0.35);
 }
 
-/* Game Box */
 .game-box {
     display: flex;
     flex-direction: column;
@@ -103,7 +101,6 @@ input:disabled {
     cursor: not-allowed;
 }
 
-/* Buttons */
 .main-btn {
     width: 100%;
     padding: 13px;
@@ -147,7 +144,6 @@ input:disabled {
     color: #ffffff;
 }
 
-/* Feedback Message */
 .message {
     min-height: 24px;
     font-size: 15px;
@@ -164,8 +160,6 @@ input:disabled {
 .message.error {
     color: #f87171;
 }
-
-/* Stats */
 .stats-bar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -202,8 +196,6 @@ input:disabled {
     color: #64748b;
     font-size: 12px;
 }
-
-/* Utility & Animations */
 .hidden {
     display: none !important;
 }
@@ -219,12 +211,9 @@ input:disabled {
     60% { transform: translateX(-5px); }
     80% { transform: translateX(5px); }
 }
-
-@media(max-width: 450px) {
-    .container {
+  .container {
         padding: 24px 18px;
     }
     h1 {
         font-size: 21px;
     }
-}

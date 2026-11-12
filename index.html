@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>🎯 Number Guessing Game</h1>
+        <h1> Number Guessing Game</h1>
         <p class="subtitle" id="rangeText">Guess a number between 1 and 50</p>
 
-        <!-- Difficulty Selection -->
         <div class="difficulty">
             <button class="diff-btn active" onclick="selectDifficulty('easy', this)">Easy (1-50)</button>
             <button class="diff-btn" onclick="selectDifficulty('medium', this)">Medium (1-100)</button>
             <button class="diff-btn" onclick="selectDifficulty('hard', this)">Hard (1-200)</button>
         </div>
 
-        <!-- Game Box -->
         <div class="game-box">
             <input
                 type="number"
@@ -46,9 +42,8 @@
                 </div>
             </div>
 
-            <!-- Restart button shown only when round ends -->
             <button id="restartBtn" class="restart-btn hidden" onclick="initGame()">
-                🔄 Play Again
+                Play Again
             </button>
         </div>
 
