@@ -9,10 +9,7 @@
 <body>
 
     <div class="container">
-        <div class="header-row">
-            <h1>🎯 Number Guessing Game</h1>
-            <button id="soundToggle" class="icon-btn" onclick="toggleSound()" title="Toggle Sound">🔊</button>
-        </div>
+        <h1>🎯 Number Guessing Game</h1>
         <p class="subtitle" id="rangeText">Guess a number between 1 and 50</p>
 
         <!-- Difficulty Selection -->
@@ -38,10 +35,6 @@
 
             <p class="message" id="message">Make your first guess!</p>
 
-            <button id="hintBtn" class="hint-btn" onclick="getHint()" title="Get a hint (Once per round)">
-                💡 Need a Hint?
-            </button>
-
             <div class="stats-bar">
                 <div class="stat-item">
                     <span class="stat-label">Attempts Left</span>
@@ -64,7 +57,6 @@
         </div>
     </div>
 
-    <canvas id="confettiCanvas"></canvas>
     <script src="script.js"></script>
 </body>
 </html>
